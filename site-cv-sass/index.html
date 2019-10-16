@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>C.V.</title>
+</head>
+
+<body>
+    <header>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <nav>
+                <ul class="nav-top">
+                    <a class="active" href="index.html">
+                        <li class="itemNav">HOME</li>
+                    </a>
+                    <a href="aboutMe.html">
+                        <li class="itemNav">ABOUT ME</li>
+                    </a>
+                    <a href="projects.html">
+                        <li class="itemNav">MY PROJETCS</li>
+                    </a>
+                    <a href="contact.html">
+                        <li class="itemNav">CONTACT ME</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="home">
+        <p>Hi! my name is</p>
+        <h1>Baptiste <span>Bourlet</span></h1>
+        <hr>
+        <p>Web developer, Designer & Programmer</p>
+    </main>
+    <footer class="home">
+        <ul>
+            <a>
+                <li><i class="fa fa-twitter" style="font-size: 40px; color: white"></i></li>
+            </a>
+            <a>
+                <li><i class="fa fa-instagram" style="font-size: 40px; color: white"></i></li>
+            </a>
+            <a>
+                <li><a><i class="fa fa-facebook" style="font-size: 40px; color: white"></i></li>
+            </a>
+            <a>
+                <li><a><i class="fa fa-github" style="font-size: 40px; color: white"></i></li>
+            </a>
+        </ul>
+    </footer>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+</body>
+
+</html>

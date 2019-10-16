@@ -1,0 +1,30 @@
+main.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+}
+div.flex{
+    display: flex;
+    justify-content: center;
+    .contact{
+        padding: 0 25px 0 25px;
+    }
+}
+.socialBar{
+    display: flex;
+    justify-content: center;
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            padding: 20px;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    div.flex{
+        flex-direction: column;
+    }
+}

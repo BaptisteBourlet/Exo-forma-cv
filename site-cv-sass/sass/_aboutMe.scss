@@ -1,0 +1,100 @@
+main{
+    height: 90vh;
+    .center{
+        height: 40vh;
+        margin: 0 15% 0 15%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        h1{
+            margin-bottom: 0;
+        }
+    }
+    div.bigBox1{
+        height: 50vh;
+        display: flex;
+        background-color: $primaryColor;
+        div.inBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            ul{
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+        div.contentBox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            div.box{
+                width: 70%;
+                background-color: $boxColor;
+                h2{
+                    color: white;
+                    margin: 0 10px 0 10px;
+                }
+                h3{
+                    color: white;
+                    margin: 0 10px 0 10px;
+                }
+                p.description{
+                    margin: 0 10px 0 10px;
+                    font-weight: bold;
+                }
+                p.content{
+                    margin: 0 10px 0 10px;
+                }
+                hr.box{
+                    background-color: $orangeColor;
+                    height: 3px;
+                    border: none;
+                    margin: 0
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 789px){
+    nav{
+        margin-bottom: 100px;
+    }
+    main{
+        div.bigBox1{
+        height: 60vh;
+        flex-direction: column-reverse;
+        div.contentBox{
+            div.box{
+                width: 100%;
+            }
+        }
+        .inBox{
+            ul{
+                display: flex;
+                li{
+                    margin-right: 20px;
+                }
+            }
+        }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    main{
+        div.center{
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    main{
+        div.center{
+            margin-bottom: 220px;
+        }
+    }
+}

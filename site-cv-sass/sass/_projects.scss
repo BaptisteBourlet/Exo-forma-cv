@@ -1,0 +1,82 @@
+img.imgProjet{
+    width: 100%;
+    height:160px;
+}
+div.bigBox{
+    display: flex;
+    background-color: $primaryColor;
+    height: 50vh;
+    div.inBox{
+        display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        ul li{
+            list-style-type: none;
+        }
+    }
+}
+div.contentAllBox{
+    margin: auto;
+    display: flex;
+    .contentBox{
+        margin: 0px 25px 0 25px;
+        div.boxImg{
+            width: 300px;
+            margin: 5%;
+            hr.box{
+                background-color: $orangeColor;
+                height: 3px;
+                border: none;
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1130px){
+    main{
+        div.bigBox{
+            height: 75vh;
+            flex-direction: column-reverse;
+            .contentAllBox{
+
+                flex-direction: column;
+                .contentBox{
+                    display: flex;
+
+                }
+            }
+            .inBox{
+                ul{
+                    display: flex;
+                    li{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    main{
+        div.bigBox{
+            height: 180vh;
+        }
+    }
+    
+    div.contentAllBox{
+        flex-direction: column;
+        .contentBox{
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width: 360px){
+    main{
+        div.bigBox{
+            height: 220vh;
+            .contentBox{
+                margin: 0;
+            }
+        }
+    }
+}
